@@ -2,9 +2,9 @@
 
 namespace App\Repositories;
 
+use App\Entities\ProductCategory;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Repositories\ProductsCategoriesRepository;
 use App\Entities\ProductsCategories;
 use App\Validators\ProductsCategoriesValidator;
 
@@ -21,7 +21,7 @@ class ProductsCategoriesRepositoryEloquent extends BaseRepository implements Pro
      */
     public function model()
     {
-        return ProductsCategories::class;
+        return ProductCategory::class;
     }
 
     

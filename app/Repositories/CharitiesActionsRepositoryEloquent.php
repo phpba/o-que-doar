@@ -2,9 +2,9 @@
 
 namespace App\Repositories;
 
+use App\Entities\CharityAction;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Repositories\CharitiesActionsRepository;
 use App\Entities\CharitiesActions;
 use App\Validators\CharitiesActionsValidator;
 
@@ -21,7 +21,7 @@ class CharitiesActionsRepositoryEloquent extends BaseRepository implements Chari
      */
     public function model()
     {
-        return CharitiesActions::class;
+        return CharityAction::class;
     }
 
     
