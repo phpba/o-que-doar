@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/api/v1/products-categories', 'ProductCategoryController@index');
+Route::post('/api/v1/products-categories', 'ProductCategoryController@create');
+Route::put('/api/v1/products-categories/{id}', 'ProductCategoryController@update');
+Route::delete('/api/v1/products-categories/{id}', 'ProductCategoryController@destroy');
